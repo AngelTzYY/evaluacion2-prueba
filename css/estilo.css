@@ -78,18 +78,18 @@ main {
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.57); /* Color de fondo transparente */
+    background-color: rgba(0, 0, 0, 0.57); 
     text-align: center;
     padding: 10px;
-    width: calc(100% - 40px); /* Ajusta el ancho para compensar el margen derecho */
+    width: calc(100% - 40px); 
     clear: both;
-    transition: transform 0.3s ease; /* Transición para el cambio de transformación */
+    transition: transform 0.3s ease; 
     border-radius: 20px;
-    margin-left: 8px; /* Elimina el margen derecho */
+    margin-left: 8px; 
 }
 
 footer:hover {
-    transform: translateY(-5px); /* Cambia la posición en el eje Y al hacer hover */
+    transform: translateY(-5px); 
 }
 
 .perfil_leon {
@@ -141,20 +141,20 @@ footer:hover {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: 35px;
-    opacity: 0; /* Inicialmente oculto */
-    animation: animacionSobreElTigre 6s ease forwards; /* Duración de la animación */
+    opacity: 0; 
+    animation: animacionSobreElTigre 6s ease forwards; 
 }
 
 @keyframes animacionSobreElTigre {
     0% { opacity: 0; }
     50% { opacity: 0; }
-    45% { opacity: 0; } /* Mantener oculto al principio */
-    100% { opacity: 1; } /* Aparecer gradualmente hacia el final y permanecer visible */
+    45% { opacity: 0; } 
+    100% { opacity: 1; } 
 }
 
 .tigre_sobre:hover {
-    opacity: 0.7; /* Reducir la opacidad al pasar el ratón */
-    transition: opacity 0.3s ease; /* Agregar transición suave */
+    opacity: 0.7; 
+    transition: opacity 0.3s ease; 
 }
 
 @keyframes animacionLetras {
@@ -165,16 +165,16 @@ footer:hover {
 
 
 footer {
-    position: relative; /* Asegura que la imagen esté contenida dentro del footer */
+    position: relative; 
 }
 
 .footer-image {
     bottom: 0;
     left: 0;
-    z-index: -1; /* Asegura que la imagen esté delante del contenido */
+    z-index: -1; 
     pointer-events: none; /* Evita que la imagen afecte la interacción del usuario con el contenido */
-    width: 100%; /* Ajusta el ancho de la imagen para que se ajuste al ancho del footer */
-    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    width: 100%; 
+    height: auto; 
     top: 100px;
     background-repeat: repeat;
     margin-top: 100px;
@@ -191,16 +191,16 @@ footer {
 }
 
 hr {
-    height: 5px; /* Altura del hr */
-    border: 0; /* Sin borde */
-    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); /* Gradiente de colores */
-    animation: rainbow 5s linear infinite; /* Animación de cambio de color */
+    height: 5px; 
+    border: 0; 
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); 
+    animation: rainbow 5s linear infinite; 
 }
 
-/* Animación de cambio de color */
+
 @keyframes rainbow {
-    0% { background-position: 0 0; } /* Inicio del gradiente */
-    100% { background-position: 100% 0; } /* Fin del gradiente */
+    0% { background-position: 0 0; } 
+    100% { background-position: 100% 0; } 
 }
 
 .world_life{
@@ -216,8 +216,8 @@ ul {
 }
 
 .world_life:hover,.tigers-world:hover{
-    opacity: 0.7; /* Reducir la opacidad al pasar el ratón */
-    transition: opacity 0.3s ease; /* Agregar transición suave */
+    opacity: 0.7; 
+    transition: opacity 0.3s ease; 
 }
 
 #tigre-nosotros:hover {
@@ -228,7 +228,7 @@ ul {
 }
 
 .blanco {
-    filter: brightness(10000%); /* Cambia el color a blanco */
+    filter: brightness(10000%); 
     position: absolute;
     margin-left: -20px;
     margin-top: -10px;
@@ -287,7 +287,7 @@ th {
 
 
 body {
-    color: #ffffff; /* Establece un color gris oscuro para todo el texto del cuerpo */
+    color: #ffffff; 
 }
 
 a {
@@ -295,15 +295,15 @@ a {
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.2); /* Blanco con un 20% de opacidad */
-    padding: 20px; /* Espacio dentro de las secciones */
-    margin: 20px 0; /* Margen superior e inferior para separar las secciones */
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 20px; 
+    margin: 20px 0; 
 }
 
-/* Mejorar la legibilidad del texto con sombra */
+
 p, h1, h2, h3, a {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-    color: white; /* Asegurarte de que el texto sea blanco */
+    color: white; 
 }
 
 
@@ -321,7 +321,7 @@ p, h1, h2, h3, a {
 }
 
 .gallery a:hover {
-    border-color: #ffcc00; /* Cambia el color del borde al pasar el cursor */
+    border-color: #ffcc00; 
 }
 
 .gallery img {
@@ -334,18 +334,18 @@ p, h1, h2, h3, a {
     margin: 0;
     text-align: center;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 5px;
 }
 
 .gallery img {
     max-width: 100%;
-    max-height: 250px; /* Ajusta la altura máxima según lo que desees */
-    object-fit: cover; /* Ajusta las imágenes para llenar el contenedor sin deformarlas */
+    max-height: 250px; 
+    object-fit: cover; 
 }
 
 .gallery a {
-    position: relative; /* Establece una posición relativa para que el pseudo-elemento se posicione correctamente */
+    position: relative; 
     display: inline-block; 
 }
 
