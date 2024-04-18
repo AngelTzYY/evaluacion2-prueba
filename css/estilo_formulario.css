@@ -1,0 +1,99 @@
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 100px;
+}
+
+:root {
+    --text-color: #fff;
+    --bg-color: #111;
+
+}
+
+#formulario {
+    text-align: center;
+    color: white;
+}
+
+#formulario input[type="text"],
+#formulario input[type="email"] {
+    width: 300px; 
+}
+
+#formulario textarea {
+    width: 300px; 
+}
+
+
+
+#formulario {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.imagen-formulario {
+    position: absolute;
+    top: 0;
+    left: -150px; 
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.imagen-formulario2 {
+    position: absolute;
+    top: 10px;
+    left: 450px; 
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}

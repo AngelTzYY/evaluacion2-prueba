@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="css/estilo_formulario.css">
+</head>
+<body>
+    <div id="formulario">
+        <h1>Formulario De Contacto</h1>
+        <br>
+        <form action="contactos2.html">
+            <label for="nombre">Nombre:</label>
+            <br>
+            <br>
+            <input style = "font-family: 'Times New Roman', Times, serif; font-weight: bold;" type="text" id="nombre" name="nombre" placeholder = "Ingrese su Nombre" maxlength="20" required><br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <label for="apellido">Apellido:</label>
+            <br>
+            <br>
+            <input style = "font-family: 'Times New Roman', Times, serif; font-weight: bold;" type="text" id="apellido" name="apellido" placeholder = "Ingrese Su Apellido" maxlength="20" required><br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <img style = "z-index: -1; position: absolute; margin-left: -150px; margin-top: -150px;" src="imagenes/formulario.png" alt="" class = "imagen-formulario2">
+
+            <img style = "z-index: -1; position: absolute; margin-left: -150px; margin-top: -150px;" src="imagenes/formulario.png" alt="" class = "imagen-formulario">
+            
+            <label style = "font-family: 'Times New Roman', Times, serif; font-weight: bold;" for="email">Email:</label>
+            <br>
+            <br>
+            <input style = "font-weight: bold;" type="email" id="email" name="email" placeholder = "Ingrese Su Email" required><br>
+
+            <br>
+            <br>
+            
+            <label for="date">Fecha De Nacimiento</label>
+            <br>
+            <br>
+
+            <input type="date" required>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <label for="mensaje">Mensaje:</label>
+            <br>
+            <br>
+            <textarea id="mensaje" name="mensaje" rows="10" placeholder="Ingrese Un Mensaje..." maxlength="200" required></textarea><br>
+
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

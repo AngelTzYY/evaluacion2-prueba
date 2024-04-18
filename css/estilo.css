@@ -1,0 +1,362 @@
+.container {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.subtitulo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 100px;
+}
+
+header {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.15), #FFFFFF, #ffa600d6, #FFFFFF, rgba(0, 0, 0, 0.15)); 
+    color: #FFFFFF; 
+    text-align: center;
+    padding: 20px;
+    position: relative; 
+    animation: blinkAnimation 3s infinite; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px; 
+    font-family: 'Arial', sans-serif;
+    
+}
+
+@keyframes blinkAnimation {
+    0%, 50%, 100% {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+    25%, 75% {
+        background-color: #ffa600d6; 
+    }
+}
+
+:root {
+    --text-color: #fff;
+    --bg-color: #111;
+
+}
+
+
+.logo {
+    height: 300px;
+}
+
+nav {
+    background-color: #4CAF50; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 1px;
+    border-radius: 10px; 
+}
+
+nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding: 15px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+    border-radius: 10px; 
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.933); 
+    color: #000; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.1); 
+}
+
+main {
+    padding: 30px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.57); /* Color de fondo transparente */
+    text-align: center;
+    padding: 10px;
+    width: calc(100% - 40px); /* Ajusta el ancho para compensar el margen derecho */
+    clear: both;
+    transition: transform 0.3s ease; /* Transición para el cambio de transformación */
+    border-radius: 20px;
+    margin-left: 8px; /* Elimina el margen derecho */
+}
+
+footer:hover {
+    transform: translateY(-5px); /* Cambia la posición en el eje Y al hacer hover */
+}
+
+.perfil_leon {
+    margin-left: 900px;
+    border-radius: 20px;
+    transform: scaleX(-1);
+    position: absolute;
+    transition: transform 0.3s ease;
+    margin-top: 400px;
+}
+
+.perfil_leon:hover {
+    animation: levitar 0.5s infinite alternate;
+}
+
+@keyframes levitar {
+    0%, 100% { transform: scaleX(-1) translateY(0); }
+    50% { transform: scaleX(-1) translateY(-10px); }
+}
+
+.tigre_sobre {
+    position: absolute;
+    margin-top: 550px; 
+    left: 1150px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.el_tigre {
+    position: absolute;
+    margin-top: 600px; 
+    margin-left: 1183px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    animation: animacionLetras 5s ease forwards;
+}
+
+.sobre_el_tigre {
+    position: absolute;
+    margin-top: 633px; 
+    margin-left: 1153px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    opacity: 0; /* Inicialmente oculto */
+    animation: animacionSobreElTigre 6s ease forwards; /* Duración de la animación */
+}
+
+@keyframes animacionSobreElTigre {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    45% { opacity: 0; } /* Mantener oculto al principio */
+    100% { opacity: 1; } /* Aparecer gradualmente hacia el final y permanecer visible */
+}
+
+.tigre_sobre:hover {
+    opacity: 0.7; /* Reducir la opacidad al pasar el ratón */
+    transition: opacity 0.3s ease; /* Agregar transición suave */
+}
+
+@keyframes animacionLetras {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+
+footer {
+    position: relative; /* Asegura que la imagen esté contenida dentro del footer */
+}
+
+.footer-image {
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Asegura que la imagen esté delante del contenido */
+    pointer-events: none; /* Evita que la imagen afecte la interacción del usuario con el contenido */
+    width: 100%; /* Ajusta el ancho de la imagen para que se ajuste al ancho del footer */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    top: 100px;
+    background-repeat: repeat;
+    margin-top: 100px;
+    margin-top: -300px;
+    margin-top: -120px;
+
+    
+}
+
+.cabeza-tigre {
+    margin-top: 200px;
+    height: 300px;
+    text-align: center;
+}
+
+hr {
+    height: 5px; /* Altura del hr */
+    border: 0; /* Sin borde */
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); /* Gradiente de colores */
+    animation: rainbow 5s linear infinite; /* Animación de cambio de color */
+}
+
+/* Animación de cambio de color */
+@keyframes rainbow {
+    0% { background-position: 0 0; } /* Inicio del gradiente */
+    100% { background-position: 100% 0; } /* Fin del gradiente */
+}
+
+.world_life{
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+ul {
+    color: greenyellow;
+
+}
+
+.world_life:hover,.tigers-world:hover{
+    opacity: 0.7; /* Reducir la opacidad al pasar el ratón */
+    transition: opacity 0.3s ease; /* Agregar transición suave */
+}
+
+#tigre-nosotros:hover {
+    transform: scaleX(-1);
+    transition: transform 0.3s ease;
+    transform: translateY(-5px);
+
+}
+
+.blanco {
+    filter: brightness(10000%); /* Cambia el color a blanco */
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -10px;
+}
+
+.imageness {
+    height: 200px;
+    
+}
+
+@keyframes desplazamiento {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+}
+
+.imagen-desplazamiento {
+    height: 450px;
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 60px;
+    z-index: -1;
+    border-radius: 50px;
+    animation: desplazamiento 3s ease forwards;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd90;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #000000a0;
+}
+
+
+.blur-background3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imagenes/musgo.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px);
+    z-index: -1;
+}
+
+
+
+body {
+    color: #ffffff; /* Establece un color gris oscuro para todo el texto del cuerpo */
+}
+
+a {
+    color: pink;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.2); /* Blanco con un 20% de opacidad */
+    padding: 20px; /* Espacio dentro de las secciones */
+    margin: 20px 0; /* Margen superior e inferior para separar las secciones */
+}
+
+/* Mejorar la legibilidad del texto con sombra */
+p, h1, h2, h3, a {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    color: white; /* Asegurarte de que el texto sea blanco */
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+}
+
+.gallery a {
+    display: block;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.gallery a:hover {
+    border-color: #ffcc00; /* Cambia el color del borde al pasar el cursor */
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery p {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    padding: 5px;
+}
+
+.gallery img {
+    max-width: 100%;
+    max-height: 250px; /* Ajusta la altura máxima según lo que desees */
+    object-fit: cover; /* Ajusta las imágenes para llenar el contenedor sin deformarlas */
+}
+
+.gallery a {
+    position: relative; /* Establece una posición relativa para que el pseudo-elemento se posicione correctamente */
+    display: inline-block; 
+}
+
+.imagen1,.imagen2,.imagen3,.imagen4,.imagen5,.imagen6 {
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+}
+
+
+.imagen1:hover,.imagen2:hover,.imagen3:hover,.imagen4:hover,.imagen5:hover,.imagen6:hover {
+    transform: scale(1.1);
+}
+
+
+
